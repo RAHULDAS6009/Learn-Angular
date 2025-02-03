@@ -8,13 +8,18 @@ import { HttpClient } from '@angular/common/http';
   providedIn: 'root',
 })
 export class TaskService {
-   apiUrl:string="http://localhost:5000/tasks"
-  constructor(private http:HttpClient) {}
+  apiUrl: string = 'http://localhost:5000/tasks';
+  constructor(private http: HttpClient) {}
 
-  getTasks(): Observable<Task[]> {  
+  getTasks(): Observable<Task[]> {
     // const tasks = of(Tasks);
     // return tasks;
 
     return this.http.get<Task[]>(this.apiUrl);
+  }
+
+  deleteTask(task: Task): Observable<Task> {
+    const url = `${this.apiUrl}/${task.id}`;
+    return this.http.delete<Task>(url);
   }
 }
