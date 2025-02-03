@@ -16,8 +16,13 @@ const httpOptions = {
 export class TaskService {
   apiUrl: string = 'http://localhost:5000/tasks';
   constructor(private http: HttpClient) {}
+  // observables are like promises
+  /*Observables are a powerful asynchronous programming concept used in Angular for handling events, HTTP requests
+   real-time data streams, and more. 
+  They are a core part of RxJS (Reactive Extensions for JavaScript). */
 
   getTasks(): Observable<Task[]> {
+    // 'of' --->  'convert Values into observables type to resolve it with .subscribe'
     // const tasks = of(Tasks);
     // return tasks;
 

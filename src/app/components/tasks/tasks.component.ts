@@ -15,7 +15,9 @@ export class TasksComponent implements OnInit {
   tasks: Task[] = [];
   constructor(private taskService: TaskService) {}
   ngOnInit(): void {
-    //like .then in promise
+    //like .then like in promise
+    // to resolve obseravbles we use .subscribe
+
     this.taskService.getTasks().subscribe((tasks) => {
       this.tasks = tasks;
     });
