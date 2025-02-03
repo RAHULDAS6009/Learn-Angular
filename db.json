@@ -4,25 +4,25 @@
       "id": "1",
       "text": "Meeting with Client",
       "day": "May 6th at 10:00 am",
-      "remainder": true
+      "reminder": true
     },
     {
       "id": "2",
       "text": "Meeting with Client",
       "day": "May 6th at 10:00 am",
-      "remainder": false
+      "reminder": false
     },
     {
       "id": "4",
       "text": "Gym Workout",
       "day": "May 8th at 6:30 am",
-      "remainder": false
+      "reminder": true
     },
     {
       "id": "5",
       "text": "Project Deadline",
       "day": "May 9th at 11:59 pm",
-      "remainder": true
+      "reminder": true
     }
   ]
 }
