@@ -4,7 +4,7 @@
       "id": "1",
       "text": "Meeting with Client",
       "day": "May 6th at 10:00 am",
-      "remainder": false
+      "remainder": true
     },
     {
       "id": "2",
